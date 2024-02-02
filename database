@@ -29,3 +29,7 @@ ALTER TABLE games ADD CONSTRAINT fk_games_opponent FOREIGN KEY(opponent_id) REFE
 ALTER TABLE games ADD COLUMN winner_goals INT NOT NULL;
 
 ALTER TABLE games ADD COLUMN opponent_goals INT NOT NULL;
+
+ALTER TABLE teams ALTER COLUMN winner_id IS NULL;
+
+ALTER TABLE teams ALTER COLUMN name SET NOT NULL;
